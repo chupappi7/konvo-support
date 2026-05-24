@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-label="Sage, the Konvo mascot">
+  <path d="M18 2 Q8 18 5 30 Q-2 50 10 70 Q22 95 50 98 Q78 95 90 70 Q102 50 95 30 Q92 18 82 2 Q74 10 66 22 Q50 16 34 22 Q26 10 18 2 Z" fill="#E08968"/>
+  <ellipse cx="21" cy="18" rx="4" ry="9" fill="#F2EBE0"/>
+  <ellipse cx="79" cy="18" rx="4" ry="9" fill="#F2EBE0"/>
+  <ellipse cx="22" cy="62" rx="7" ry="4" fill="#D9836E" opacity="0.5"/>
+  <ellipse cx="78" cy="62" rx="7" ry="4" fill="#D9836E" opacity="0.5"/>
+  <path d="M50 58 Q70 50 75 62 Q75 80 50 90 Q25 80 25 62 Q30 50 50 58 Z" fill="#F2EBE0"/>
+  <ellipse cx="36" cy="46" rx="3" ry="6" fill="#1A1715"/>
+  <ellipse cx="64" cy="46" rx="3" ry="6" fill="#1A1715"/>
+  <circle cx="37" cy="43" r="1.5" fill="#FFFFFF" opacity="0.85"/>
+  <circle cx="65" cy="43" r="1.5" fill="#FFFFFF" opacity="0.85"/>
+  <path d="M46 64 Q50 60 54 64 Q50 70 46 64 Z" fill="#1A1715"/>
+  <path d="M50 70 Q44 76 42 74 M50 70 Q56 76 58 74" stroke="#1A1715" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+</svg>
