@@ -119,20 +119,28 @@
   .hero-phone img.fade { opacity: 0; }
   .nav-arrow {
     position: absolute; top: 50%; transform: translateY(-50%);
-    width: 44px; height: 44px; border-radius: 50%;
-    background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12);
-    color: var(--text); font-size: 22px; font-weight: 800; cursor: pointer;
-    display: flex; align-items: center; justify-content: center;
-    backdrop-filter: blur(8px);
-    transition: background 150ms, transform 150ms;
+    background: none; border: none; padding: 14px 6px;
+    color: rgba(242,235,224,0.42);
+    cursor: pointer;
+    transition: color 180ms, transform 180ms;
     z-index: 5;
+    display: flex; align-items: center; justify-content: center;
   }
-  .nav-arrow:hover { background: var(--accent); color: #15110F; transform: translateY(-50%) scale(1.06); }
-  .nav-arrow.prev { left: -22px; }
-  .nav-arrow.next { right: -22px; }
-  @media (max-width: 480px) {
-    .nav-arrow.prev { left: 4px; }
-    .nav-arrow.next { right: 4px; }
+  .nav-arrow svg { width: 22px; height: 72px; display: block; }
+  .nav-arrow:hover { color: var(--accent); }
+  .nav-arrow.prev:hover { transform: translateY(-50%) translateX(-3px); }
+  .nav-arrow.next:hover { transform: translateY(-50%) translateX(3px); }
+  .nav-arrow.prev { left: -58px; }
+  .nav-arrow.next { right: -58px; }
+  @media (max-width: 600px) {
+    .nav-arrow.prev { left: -42px; }
+    .nav-arrow.next { right: -42px; }
+    .nav-arrow svg { width: 18px; height: 56px; }
+  }
+  @media (max-width: 420px) {
+    .nav-arrow.prev { left: -32px; }
+    .nav-arrow.next { right: -32px; }
+    .nav-arrow svg { width: 14px; height: 48px; }
   }
   .carousel-caption {
     text-align: center;
@@ -319,11 +327,15 @@
     </div>
     <div>
       <div class="carousel">
-        <button class="nav-arrow prev" aria-label="Previous screen" id="prev">‹</button>
+        <button class="nav-arrow prev" aria-label="Previous screen" id="prev">
+          <svg viewBox="0 0 22 72" aria-hidden="true"><polyline points="16,4 6,36 16,68" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
         <div class="hero-phone">
           <img id="screen" src="screens/01-home.png" alt="Konvo home screen — pick what to practice">
         </div>
-        <button class="nav-arrow next" aria-label="Next screen" id="next">›</button>
+        <button class="nav-arrow next" aria-label="Next screen" id="next">
+          <svg viewBox="0 0 22 72" aria-hidden="true"><polyline points="6,4 16,36 6,68" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
         <div class="carousel-caption" id="caption"><b>Home</b> — Pick what you want to practice.</div>
         <div class="dots" id="dots"></div>
       </div>
